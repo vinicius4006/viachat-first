@@ -1,0 +1,263 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sacramento&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa&display=swap');
+@import "~react-image-gallery/styles/css/image-gallery.css";
+
+@font-face {
+    font-family: Gotham;
+    src: url(./public/fonts/Gotham-Black.otf)
+  }
+  
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Poppins;
+   
+}
+
+
+.font-comfortaa {
+    font-family: 'Comfortaa', cursive;
+}
+
+.font-patrick-hand {
+    font-family: 'Patrick Hand', cursive;
+}
+
+.font-sacramento {
+    font-family: 'Sacramento', cursive;
+}
+
+.font-josefin-sans {
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+.font-poppins {
+    font-family: 'Poppins', sans-serif;
+}
+
+.font-montserrat {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.font-open-sans {
+    font-family: 'Open Sans', sans-serif;
+}
+
+
+
+
+.btn {
+    @apply shadow-md py-3 px-6 rounded-md transition duration-300
+}
+.btn-blue {
+    @apply bg-blue-logo text-white
+  
+}
+.btn-transition {
+    @apply bg-gray-700 text-white
+  
+}
+.btn-green {
+    @apply bg-green-logo text-white
+  
+}
+form
+{
+    background-image: url('./public/contactus.png');  
+}
+
+
+label
+{
+    @apply mb-3 p-5  flex flex-col items-start
+}
+
+.span-contact
+{
+    @apply  text-black  font-bold 
+           
+}
+
+
+
+form input, textarea
+{
+    @apply block w-full rounded-md border-2 border-gray-300 shadow-sm outline-none
+    focus:border-transition-gb focus:ring focus:ring-transition-gb focus:border-2
+    focus:ring-opacity-50 h-12
+}
+
+.btn-send
+{
+    @apply transition-all duration-1000 ease-in-out scale-75
+    bg-green-400 block rounded-full border-0 w-1/2 m-auto h-12 cursor-not-allowed
+}
+
+
+
+.name-viachat {
+    background: #53a08e;
+    color: white;
+    padding: 10px 25px;
+    border-radius: 30px;
+    text-transform: uppercase;
+    letter-spacing: 2.5px;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease 0s;
+    outline: none;
+}
+.name-viachat:hover {
+    background: #7ebea3;  
+    box-shadow: 0px 15px 20px rgba(46, 229, 157, 0.3);
+  
+}
+/* .name-viachat:hover {
+    background: linear-gradient(90deg, rgba(0,213,187,1) 0%, rgba(0,203,194,1) 35%, rgba(0,166,220,1) 100%);  
+    box-shadow: 0px 15px 20px rgba(46, 229, 157, 0.3);
+    transform: translateY(-7px);
+} */
+
+/* .li-org {
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+ul li:hover {
+    transform: translateY(-15px);
+}
+.li-img {
+    max-width: 60px;
+    
+} */
+
+
+
+
+.sign-up__button {
+    padding: 5px 25px;
+}
+
+.learn-more__button {
+    padding: 5px 45px;
+}
+
+.fale-conosco__button {
+    padding: 5px 45px;
+}
+
+.inc-dec__button {
+    font-size: 40px;
+}
+
+.background-gradient {
+    background-image: linear-gradient(45deg, rgba(0, 122, 252, 1) 0%, rgba(0, 251, 160, 1)  50%);   
+}
+
+.gradient-button {
+    background-image: linear-gradient(to right, #007AFC 0%, #00FBA0  40%);
+}
+
+.border-gradient {
+    position:relative;
+}
+
+.border-gradient::before {
+    /* border-width: 4px;
+    border-image: linear-gradient(45deg, rgba(0, 122, 252,1) 0%, rgba(0, 251, 160,1) 100%);
+    border-image-slice: 9; */
+    
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border-radius: 30px; 
+    padding: 4px; 
+    background: linear-gradient(45deg, rgba(0, 122, 252,1) 0%, rgba(0, 251, 160,1) 100%); 
+    -webkit-mask: 
+        linear-gradient(#fff 0 0) content-box, 
+        linear-gradient(#fff 0 0);
+    -webkit-mask-composite: destination-out; 
+    mask-composite: exclude; 
+}
+
+.text-gradient {
+    background-image: linear-gradient(to right, #007AFC 0%, #00FBA0  40%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.gradient-button {
+    text-align: center;
+    font-weight: 500;
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: white;            
+    border-radius: 20px;
+    display: block;
+}
+
+.gradient-button:hover {
+    background-position: right center;
+    color: #fff;
+    text-decoration: none;
+} 
+
+.elevation-20dp {
+	box-shadow: 0 20px 20px 0 rgba(0, 0, 0, .14), 0 3px 1px -2px rgba(0, 0, 0, .2), 0 1px 5px 0 rgba(0, 0, 0, .12);
+}
+
+
+
+.button-contactus {
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	width: 12.5rem;
+	margin: 0;
+	padding: 1.5rem 3.125rem;
+	background-color: aqua;
+	border: none;
+	border-radius: 0.3125rem; 
+	box-shadow: 0 12px 24px 0 rgba(0,0,0,0.2);
+    color: white;
+	font-weight: 300;
+	text-transform: uppercase;
+	overflow: hidden; 
+}
+
+.button-contactus::before
+{
+    position: absolute;
+		content: '';
+		bottom: 0;
+		left: 0;
+		width: 0%;
+		height: 100%;
+		background-color: lighten(blue,10%);
+}
+
+.span-btn
+{
+    position: relative;
+    line-height: 0;
+   
+}
